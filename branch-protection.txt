@@ -1,0 +1,21 @@
+Goal: Developer cannot push directly to main; must raise PR → tests + review pass → merge allowed.
+
+✅ Steps:
+
+Enable branch protection for main
+
+Require pull requests before merging
+
+Add GitHub Action workflow for lint/tests
+
+Mark the workflow as “Required Status Check”
+
+Require 1 reviewer approval (Checker)
+
+Now your DevEx includes:
+
+Pre-push validation via CI
+
+Controlled merges via PR reviews
+
+Secure, auditable workflow 🚀
