@@ -1,0 +1,13 @@
+You can enforce conditions like:
+
+Require pull requests before merging
+
+Require status checks (like CI/CD passing)
+
+Require review by specific users (doer & checker model)
+
+Require signed commits
+
+Prevent direct pushes to main/master
+
+✅ This enforces policies at server-side, meaning no push/merge unless all checks pass.

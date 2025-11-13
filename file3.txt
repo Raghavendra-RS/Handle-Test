@@ -1,0 +1,12 @@
+name: Pre-Push Validation
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run Linter
+        run: npm run lint
+      - name: Run Tests
+        run: npm test
+
