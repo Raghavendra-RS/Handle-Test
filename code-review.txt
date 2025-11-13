@@ -1,0 +1,17 @@
+Code Review Policy (Doer & Checker Model)
+
+GitHub supports a “Doer-Checker” (a.k.a. four-eyes principle) through:
+
+Pull Request Reviews:
+Require at least 1 approval before merging.
+
+Restrict who can push/merge:
+In Branch Protection → “Restrict who can push to matching branches.”
+
+This ensures:
+
+Developer (Doer) raises the PR
+
+Reviewer/Lead (Checker) reviews & approves it
+
+Merge allowed only after approval ✅
