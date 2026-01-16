@@ -1,0 +1,22 @@
+name: GitHub-App Inventory Audit
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHubApp Inventory
+        uses: Raghavendra-RS/GitHubApp-Inventoryy@v1.0.0
+        with:
+          github_token: ${{ secrets.ORG_AUDIT_TOKEN }}
+          org_name: Rajesh-playground
+
+      - name: Upload Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: githubapp-inventory-report
+          path: "*.csv"
