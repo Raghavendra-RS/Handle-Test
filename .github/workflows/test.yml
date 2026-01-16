@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: GitHubApp Inventory
-        uses: Raghavendra-RS/GitHubApp-Inventoryy@v1.0.0
+        uses: Raghavendra-RS/GitHubApp-Inventory@v1.0.0
         with:
           github_token: ${{ secrets.ORG_AUDIT_TOKEN }}
           org_name: Rajesh-playground
